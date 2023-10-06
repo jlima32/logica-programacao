@@ -43,19 +43,19 @@ function mediaAluno() {
     // console.log ("A nota 3 é:"+ nota3);
 
     //cálculo da média
-    document.getElementById('resultado').innerHTML = 'A média do aluno é: ' + media + '<br>';
+    // document.getElementById('resultado').innerHTML = 'A média do aluno é: ' + media + '<br>';
     // console.log ("A média do aluno é: "+ media);
 
     // Resultado:
     if( media >= 7){
         // console.log("Aprovado")
-        document.getElementById("resultado").innerHTML += "<strong>Aprovado</strong>";
+        document.getElementById("resultado").innerHTML = `<div class='aprovado'>A média do aluno é: <strong>${media}</strong><p>Aprovado!</p>`;
     }else if(media < 7 && media >= 5){
         // console.log("Exame")
-        document.getElementById("resultado").innerHTML += "<strong>Exame</strong>";
+        document.getElementById("resultado").innerHTML = `<div class='exame'>A média do aluno é: <strong>${media}</strong><p>Exame!</p>`;
     }else{
         // console.log("Reprovado")
-        document.getElementById("resultado").innerHTML += "<strong>Reprovado</strong>";
+        document.getElementById("resultado").innerHTML = `<div class='reprovado'>A média do aluno é: <strong>${media}</strong><p>Reprovado!</p>`;
     }
 
     //DOM

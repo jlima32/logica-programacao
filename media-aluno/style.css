@@ -60,3 +60,24 @@ button{
     text-align: center;
     font-size: 14px;
 }
+
+.aprovado, .reprovado, .exame{
+    
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    color: #000;
+    line-height: 25px;
+}
+
+.aprovado {
+    background-color: #DDFFDD;
+}
+
+.reprovado{
+    background-color: #FFDDDD;
+}
+
+.exame{
+    background-color: #FFFFCC;
+}
