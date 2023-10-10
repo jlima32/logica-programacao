@@ -66,6 +66,9 @@ function urnaEletronica(){
  }else if(candidato3 > candidato1 && candidato3 > candidato2){
     console.log(`o vencedor foi o candidato 3 com um total de: ${totalCandidato3Brancos} votos e uma porcentagem de: ${porcentagemCandidato3Brancos}%`);
     console.log("===========================");
+ }else if(candidato1 == candidato2 || candidato1 == candidato3 || candidato2 == candidato3){
+    console.log(`a votação terminou empatada`);
+    console.log("===========================");
  }
 
 }
