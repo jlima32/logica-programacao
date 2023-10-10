@@ -64,3 +64,22 @@ function mediaAluno() {
 
 }
 
+
+function validar(){
+    let nota1 = document.getElementById("nota1");
+    let nota2 = document.getElementById("nota2");
+    let nota3 = document.getElementById("nota3");
+    if(nota1.value == "") {
+        alert("Informe a primeira nota!");
+        nota1.focus();
+    }else if(nota2.value == "") {
+        alert("Informe a segunda nota!");
+        nota2.focus();
+    }else if(nota3.value == "") {
+        alert("Informe a terceira nota!");
+        nota3.focus();
+    }else{
+        mediaAluno();
+    }
+}
+
