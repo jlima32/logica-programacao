@@ -6,23 +6,24 @@ function urnaEletronica(){
     let nulos = 0;
 
     let voto = parseInt(prompt('Digite o número do candidato: '));
+    const msgVoto = "Voto computado com sucesso!"
 
     while (voto != 0){
         if(voto == 1){
             candidato1++;
-            console.log("Voto computado com sucesso");
+            console.log(msgVoto)
         }else if(voto == 2){
             candidato2++;
-            console.log("Voto computado com sucesso");
+            console.log(msgVoto);
         }else if(voto == 3){
             candidato3++;
-            console.log("Voto computado com sucesso");
+            console.log(msgVoto);
         }else if(voto == 5){
             brancos++;
-            console.log("Voto computado com sucesso");
+            console.log(msgVoto);
         }else if(voto == 8){
             nulos++;
-            console.log("Voto computado com sucesso");
+            console.log(msgVoto);
         }else{
             console.log("número inválido");
         }
@@ -58,16 +59,16 @@ function urnaEletronica(){
  console.log("===========================");
 
  if(candidato1 > candidato2 && candidato1 > candidato3){
-    console.log(`o vencedor foi o candidato 1 com um total de: ${totalCandidato1Brancos} votos e uma porcentagem de: ${porcentagemCandidato1Brancos}% `);
+    console.log(`O vencedor foi o candidato 1 com um total de: ${totalCandidato1Brancos} votos e uma porcentagem de: ${porcentagemCandidato1Brancos}% `);
     console.log("===========================");
  }else if(candidato2 > candidato1 && candidato2 > candidato3){
-    console.log(`o vencedor foi o candidato 2 com um total de: ${totalCandidato2Brancos} votos e uma porcentagem de: ${porcentagemCandidato2Brancos}%`);
+    console.log(`O vencedor foi o candidato 2 com um total de: ${totalCandidato2Brancos} votos e uma porcentagem de: ${porcentagemCandidato2Brancos}%`);
     console.log("===========================");
  }else if(candidato3 > candidato1 && candidato3 > candidato2){
-    console.log(`o vencedor foi o candidato 3 com um total de: ${totalCandidato3Brancos} votos e uma porcentagem de: ${porcentagemCandidato3Brancos}%`);
+    console.log(`O vencedor foi o candidato 3 com um total de: ${totalCandidato3Brancos} votos e uma porcentagem de: ${porcentagemCandidato3Brancos}%`);
     console.log("===========================");
  }else if(candidato1 == candidato2 || candidato1 == candidato3 || candidato2 == candidato3){
-    console.log(`a votação terminou empatada`);
+    console.log(`A votação terminou empatada`);
     console.log("===========================");
  }
 
